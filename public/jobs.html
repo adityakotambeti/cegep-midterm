@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>CEGEP DE LA GASPÉSIE ET DES ILES</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<header id="header">
+					<div class="inner">
+
+						<!-- Logo -->
+							<a href="index.html" class="logo">
+									<span class="fa fa-briefcase"></span> <span class="title">Cegep de la Gaspésie et des Iles</span>
+								</a>
+
+						<label class="switch">   <input type="checkbox" id="toggle" onclick="toggleTheme()">   <span class="slider round"></span> </label>
+							<nav>
+								<ul>
+									<li><a href="#menu">Menu</a></li>
+								</ul>
+							</nav>
+
+					</div>
+				</header>
+
+			<!-- Menu -->
+				<nav id="menu">
+					<h2>Menu</h2>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+
+						<li><a href="jobs.html" class="active">Jobs</a></li>
+						
+						
+
+						<li>
+							<a href="#" class="dropdown-toggle">About</a>
+
+							<ul>
+								<li><a href="about.html">About Us</a></li>
+								<li><a href="testimonials.html">Testimonials</a></li>
+								<li><a href="terms.html">Terms</a></li>
+							</ul>
+						</li>
+						
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Jobs</h1>
+
+							<div class="image main">
+								<img src="images/banner-image-6-1920x500.jpg" class="img-fluid" alt="" />
+							</div>
+
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field quarter">
+					                    <h5 style="margin-bottom: 15px">Type</h5>
+
+										<div>
+											<input type="checkbox" id="checkbox-1"> 
+
+											<label for="checkbox-1"> Contract (5) </label>
+										</div>
+
+										<div>
+											<input type="checkbox" id="checkbox-2"> 
+											
+											<label for="checkbox-2">Full time (5)</label>
+										</div>
+
+										<div>
+											<input type="checkbox" id="checkbox-3"> 
+											
+											<label for="checkbox-3">Internship (5)</label>
+										</div>
+					                </div>
+									
+									<div class="field quarter">
+										<h5 style="margin-bottom: 15px">Category</h5>
+
+										<div>
+											<input type="checkbox" id="checkbox-4"> 
+											
+											<label for="checkbox-4">Accounting / Finance / Insurance Jobs (5)</label>
+										</div>
+
+										<div>
+											<input type="checkbox" id="checkbox-5"> 
+											
+											<label for="checkbox-5">Accounting / Finance / Insurance Jobs (5)</label>
+										</div>
+					                </div>
+
+									<div class="field quarter">
+										<h5 style="margin-bottom: 15px">Career levels</h5>
+
+										<div>
+											<input type="checkbox" id="checkbox-6"> 
+											
+											<label for="checkbox-6">Entry Level (5)</label>
+										</div>
+
+										<div>
+											<input type="checkbox" id="checkbox-7"> 
+											
+											<label for="checkbox-7">Entry Level (5)</label>
+										</div>
+
+										<div>
+											<input type="checkbox" id="checkbox-8"> 
+											
+											<label for="checkbox-8">Entry Level (5)</label>
+										</div>
+									</div>
+
+									<div class="field quarter">
+										<h5 style="margin-bottom: 15px">Years of experience</h5>
+
+										<div>
+											<input type="checkbox" id="checkbox-9"> 
+											
+											<label for="checkbox-9">&lt; 1 (5)</label>
+										</div>
+
+										<div>
+											<input type="checkbox" id="checkbox-10"> 
+											
+											<label for="checkbox-10">&lt; 1 (5)</label>
+										</div>
+
+										<div>
+											<input type="checkbox" id="checkbox-12"> 
+											
+											<label for="checkbox-12">&lt; 1 (5)</label>
+										</div>
+									</div>
+								</div>
+							</form>
+
+							<!-- Jobs -->
+							<section class="tiles">
+								<article class="style1">
+									<span class="image">
+										<img src="images/product-1-720x480.jpg" alt="" />
+									</span>
+									<a href="job-details.html">
+										<h2>Java Developer</h2>
+										
+										<p><strong>$50 000</strong></p>
+										<p>
+		                                	<i class="fa fa-calendar"></i> 15-06-2020 &nbsp;&nbsp;&nbsp;&nbsp;
+                                         	<i class="fa fa-file"></i> Permanent &nbsp;&nbsp;&nbsp;&nbsp;
+                                         	<i class="fa fa-map-marker"></i> London
+										</p>
+									</a>
+								</article>
+								<article class="style2">
+									<span class="image">
+										<img src="images/product-2-720x480.jpg" alt="" />
+									</span>
+									<a href="job-details.html">
+										<h2>Sr. Java Developer</h2>
+										
+										<p><strong>$55 000</strong></p>
+
+										<p>
+		                                	<i class="fa fa-calendar"></i> 15-06-2020 &nbsp;&nbsp;&nbsp;&nbsp;
+                                         	<i class="fa fa-file"></i> Contract &nbsp;&nbsp;&nbsp;&nbsp;
+                                         	<i class="fa fa-map-marker"></i> London
+										</p>
+									</a>
+								</article>
+								<article class="style3">
+									<span class="image">
+										<img src="images/product-3-720x480.jpg" alt="" />
+									</span>
+									<a href="job-details.html">
+										<h2>Angular Developer</h2>
+										
+										<p><strong>$60 000</strong></p>
+
+										<p>
+		                                	<i class="fa fa-calendar"></i> 15-06-2020 &nbsp;&nbsp;&nbsp;&nbsp;
+                                         	<i class="fa fa-file"></i> Permanent &nbsp;&nbsp;&nbsp;&nbsp;
+                                         	<i class="fa fa-map-marker"></i> London
+										</p>
+									</a>
+								</article>
+
+								<article class="style4">
+									<span class="image">
+										<img src="images/product-4-720x480.jpg" alt="" />
+									</span>
+									<a href="job-details.html">
+										<h2>Associate Software Developer</h2>
+										
+										<p><strong>$85 000</strong></p>
+
+										<p>
+		                                	<i class="fa fa-calendar"></i> 15-06-2020 &nbsp;&nbsp;&nbsp;&nbsp;
+                                         	<i class="fa fa-file"></i> Contract &nbsp;&nbsp;&nbsp;&nbsp;
+                                         	<i class="fa fa-map-marker"></i> New York
+										</p>
+									</a>
+								</article>
+
+								<article class="style5">
+									<span class="image">
+										<img src="images/product-5-720x480.jpg" alt="" />
+									</span>
+									<a href="job-details.html">
+										<h2>Full stack Developer</h2>
+										
+										<p><strong>$75 000</strong></p>
+
+										<p>
+		                                	<i class="fa fa-calendar"></i> 15-06-2020 &nbsp;&nbsp;&nbsp;&nbsp;
+                                         	<i class="fa fa-file"></i> Permanent &nbsp;&nbsp;&nbsp;&nbsp;
+                                         	<i class="fa fa-map-marker"></i> Texas
+										</p>
+									</a>
+								</article>
+
+								<article class="style6">
+									<span class="image">
+										<img src="images/product-6-720x480.jpg" alt="" />
+									</span>
+									<a href="job-details.html">
+										<h2>DataBase Admin</h2>
+										
+										<p><strong>$100 000</strong></p>
+
+										<p>
+		                                	<i class="fa fa-calendar"></i> 15-06-2020 &nbsp;&nbsp;&nbsp;&nbsp;
+                                         	<i class="fa fa-file"></i> Permanent &nbsp;&nbsp;&nbsp;&nbsp;
+                                         	<i class="fa fa-map-marker"></i> California
+										</p>
+									</a>
+								</article>
+							</section>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<ul class="icons">
+									<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								</ul>
+
+								&nbsp;
+							</section>
+
+							<ul class="copyright">
+								<li>Copyright © 2021 Cegep de la Gaspésie et des Iles </li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/domHandler.js"></script>
+	</body>
+</html>
