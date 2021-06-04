@@ -11,6 +11,12 @@ function applyTheme(){
     document.body.classList.remove('dark');
     document.body.classList.remove('light');
     document.body.classList.add(theme);
+    if(theme == 'light'){
+        document.body.style.setProperty('--themeForegroundColor', '#585858')
+    }
+    else{
+        document.body.style.setProperty('--themeForegroundColor', '#bbbbbb')
+    }
 }
 
 function toggleTheme(){
